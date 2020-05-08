@@ -1,1 +1,1 @@
-const comeGetMe = "You got me!"
+export const comeGetMe = "You got me!"
