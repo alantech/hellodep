@@ -1,6 +1,8 @@
-from @std/deps import install, add, commit
+from @std/deps import Package, install, add, commit, dependency, block, fullBlock, using
 
-on install {
-  add('https://github.com/alantech/nestedhellodep');
-  commit();
-}
+on install fn (package: Package) = package
+  .using(['@std/app', '@std/cmd'])
+  .dependency('https://github.com/alantech/nestedhellodep.git#deps-perm')
+    .fullBlock('@std/seq')
+    .add()
+  .commit()
