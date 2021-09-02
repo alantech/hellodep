@@ -1,8 +1,10 @@
 from @std/deps import Package, install, add, commit, dependency, block, fullBlock, using
 
 on install fn (package: Package) = package
-  .using(['@std/app'])
+  .using(['@std/app', '@std/cmd'])
   .dependency('https://github.com/alantech/nestedhellodep.git#deps-perm')
+    .block('@std/http')
     .fullBlock('@std/seq')
     .add()
+  .fullBlock('@std/trig')
   .commit()
