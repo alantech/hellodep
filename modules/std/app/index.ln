@@ -1,0 +1,5 @@
+from @std/app import print
+
+export print(s: string) {
+  print('My custom print: ' + s);
+}

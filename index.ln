@@ -1,5 +1,3 @@
-from @std/app import start, exit
-
 from @alantech/nestedhellodep import echo
 
 export const comeGetMe = "You got me!";
