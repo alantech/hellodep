@@ -1,5 +1,8 @@
-from @std/app import print
+from @std/app import start, exit, print as raw_print
 
-export print(s: string) {
-  print('My custom print: ' + s);
+export start
+export exit
+
+export fn print(s: string) {
+  raw_print('My custom print: ' + s);
 }
