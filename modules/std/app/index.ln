@@ -1,7 +1,4 @@
-from @std/app import start, exit, print as raw_print
-
-export start
-export exit
+from @std/app import print as raw_print
 
 export fn print(s: string) {
   raw_print('My custom print: ' + s);
