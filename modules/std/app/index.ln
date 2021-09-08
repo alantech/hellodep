@@ -1,0 +1,5 @@
+from @std/app import print as raw_print
+
+export fn print(s: string) {
+  raw_print('My custom print: ' + s);
+}

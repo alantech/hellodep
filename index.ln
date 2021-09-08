@@ -1,1 +1,7 @@
-export const comeGetMe = "You got me!"
+from @alantech/nestedhellodep import echo
+
+export const comeGetMe = "You got me!";
+
+export fn nestedEcho {
+  echo();
+}
