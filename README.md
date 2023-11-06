@@ -4,4 +4,4 @@ A dummy dependency used by the [Alan monorepo](https://github.com/alantech/alan)
 
 ## License
 
-Apache 2.0
+MIT
